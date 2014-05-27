@@ -12,7 +12,7 @@ class Combinator {
 	private Map<Integer, List<int[]>> combinations = new HashMap<>();
 	
 	public Map<Integer, List<int[]>> combine(int count){
-		for(int i = 1; i <= count; i++){
+		for(int i = 0; i < count; i++){
 			Iterator<int[]> it = new Combinations(count, i).iterator();
 			List<int[]> combined = new ArrayList<>();
 			while(it.hasNext()){
