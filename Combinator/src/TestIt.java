@@ -5,7 +5,7 @@ public class TestIt {
 
 	public static void main(String[] args) {
 		Combinator comb = new Combinator();
-		Map<Integer, List<int[]>> combinations = comb.combine(6);
+		Map<Integer, List<int[]>> combinations = comb.numberCombine(6);
 		System.out.println(combinations.size());
 		for (int i = 0; i < combinations.size(); i++) { // To get to map row
 			for (int j = 0; j < combinations.get(i).size(); j++) { // To get to
@@ -18,6 +18,8 @@ public class TestIt {
 			}
 			System.out.println("Map row ------" + i);
 		}
+		
+//		comb.operatorCombine(4);
 	}
 
 }
